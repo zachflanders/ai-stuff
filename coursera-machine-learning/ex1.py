@@ -24,6 +24,6 @@ for i in range(iterations):
         print(cost(data['pop'], data['profit'], theta))
     theta = gradient_descent(data['pop'], data['profit'], theta, alpha)
 
-data['prediction'] = theta[0] + data['pop'] * theta[1]
+data['prediction'] = hypothesis(data['pop'], theta)
 
 data.plot.line(x='pop', y='prediction', ax=scatter_plot).get_figure().savefig('prediction.png')
