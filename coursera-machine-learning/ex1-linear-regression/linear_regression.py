@@ -18,6 +18,7 @@ class LinearRegression:
     
     def _normalize_features(self, x):
         return (x - self.mus) / self.stds
+
     def hypothesis(self, theta):
         return theta['ones'] + sum([self.X[k] * v for k, v in theta.items() if k != 'ones'])
 
