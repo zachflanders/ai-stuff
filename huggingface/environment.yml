@@ -1,0 +1,16 @@
+name: huggingface
+
+dependencies:
+  - python=3.11  
+  - black
+  - transformers
+  - accelerate
+  - peft
+  - numpy
+  - numexpr
+  - h5py
+  - matplotlib
+  - ipykernel
+  - pip:
+    - bitsandbytes
+
